@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
-int main(){
+int main()
+{
     
     int rollno,eco,ba,account,total,avg;
     char name[20];
@@ -33,33 +34,33 @@ int main(){
     cout<<"Total: "<<total<<endl;
     cout<<"avg: "<<avg<<endl;
 
-    if(eco>=35 && ba>=35 && account>=35)
+    if(eco>=35 && ba>=35 && account>=35 )
     {
         cout<<"The students is pass"<<endl;
+
+        if(avg>=80 ){
+            cout<<"Grade A"<<endl;
+        }   
+        else if(avg>=60)
+        {
+        cout<<"Grade B";
+        }
+
+        else if(avg>=50)
+        {
+            cout<<"Grade C";
+        
+        }
+        else
+        {
+            cout<<"pass out";
+       
+         }
     }
     else
     {
         cout<<"The students is faill"<<endl;
     }
     
-    if(avg>=80 )
-    {
-        cout<<"Grade A";
-    
-    }
-    else if(avg>=60)
-    {
-        cout<<"Grade B";
-    }
-
-    else if(avg>=50)
-    {
-        cout<<"Grade C";
-    }
-   
-    else
-    {
-        cout<<"pass out";
-    }
-    return 0;
+   return 0;
 }
